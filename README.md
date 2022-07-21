@@ -1,0 +1,2 @@
+# LazyTrader-Binance
+LazyTrader.Binance
