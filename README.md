@@ -91,7 +91,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
+Distributed under the GNU GPLv3 License. See `LICENSE` for more information.
 
 ## Contact
 

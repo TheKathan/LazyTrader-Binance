@@ -18,6 +18,7 @@
         <Description>Binance API integration for .NET Core 6</Description>
 		<releaseNotes>Project is available</releaseNotes>
         <Copyright>Gonçalo Faria 2022</Copyright>
+		<PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>

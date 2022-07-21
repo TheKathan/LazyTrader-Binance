@@ -1,4 +1,4 @@
-﻿namespace LazyTrader.Binance.Application;
+﻿namespace LazyTrader.Binance;
 
 public class Market
 {
