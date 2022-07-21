@@ -1,6 +1,6 @@
 ﻿namespace LazyTrader.Binance.Infrastructure.Services;
 
-public class StatusService : IStatusService
+internal class StatusService : IStatusService
 {
     private readonly ILogger<StatusService> _logger;
     private readonly IRequestService _requestService;

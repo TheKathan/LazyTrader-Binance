@@ -1,8 +1,6 @@
-﻿using System.Collections.Specialized;
+﻿namespace LazyTrader.Binance.Core.Services;
 
-namespace LazyTrader.Binance.Core.Services;
-
-public interface IRequestService
+internal interface IRequestService
 {
     Task<T> Get<T>(string uri, NameValueCollection? nameValueCollection = null, bool withArguments = true);
     Task<T> Post<T>(string uri, NameValueCollection? nameValueCollection = null);

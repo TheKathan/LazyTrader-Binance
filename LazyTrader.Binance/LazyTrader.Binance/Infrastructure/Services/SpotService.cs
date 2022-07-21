@@ -1,6 +1,6 @@
 ﻿namespace LazyTrader.Binance.Infrastructure.Services;
 
-public class SpotService : ISpotService
+internal class SpotService : ISpotService
 {
     private readonly ILogger<SpotService> _logger;
     private readonly IRequestService _requestService;

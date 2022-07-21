@@ -1,6 +1,6 @@
 ﻿namespace LazyTrader.Binance.Infrastructure.Services;
 
-public class MarketService : IMarketService
+internal class MarketService : IMarketService
 {
     private readonly ILogger<MarketService> _logger;
     private readonly IRequestService _requestService;

@@ -1,4 +1,4 @@
-﻿namespace LazyTrader.Binance;
+﻿namespace LazyTrader.Binance.Application;
 
 public static class BinanceServiceCollectionExtension
 {

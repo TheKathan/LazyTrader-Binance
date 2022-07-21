@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 
 namespace LazyTrader.Binance.Infrastructure.Services;
 
-public class RequestService : IRequestService
+internal class RequestService : IRequestService
 {
     private readonly ILogger<RequestService> _logger;
     private readonly HttpClient _httpClient;

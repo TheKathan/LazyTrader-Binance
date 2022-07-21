@@ -1,6 +1,6 @@
 ﻿namespace LazyTrader.Binance.Core.Services;
 
-public interface IStatusService
+internal interface IStatusService
 {
     Task<ServiceStatus> GetServiceStatus();
     Task<ServerTime> GetServerTime();
