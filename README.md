@@ -4,26 +4,6 @@
 [![Issues][issues-shield]][issues-url]
 [![License][license-shield]][license-url]
 
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/TheKathan/LazyTrader-Binance">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">LazyTrader Binance</h3>
-
-  <p align="center">
-    Binance API using .NET Core.
-    <br />
-    <br />    
-    <a href="https://github.com/TheKathan/LazyTrader-Binance/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/TheKathan/LazyTrader-Binance/issues">Request Feature</a>
-  </p>
-</div>
-
 ## About The Project
 
 This is my solution to integrate Binance API using .NET Core 6.

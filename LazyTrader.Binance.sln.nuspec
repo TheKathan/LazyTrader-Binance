@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>LazyTrader.Binance</id>
+    <version>1.0.0</version>
+    <authors>Gonçalo Faria</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/TheKathan/LazyTrader-Binance</projectUrl>
+    <description>Binance API integration for .NET Core 6</description>
+    <releaseNotes>Binance API integration for .NET Core 6</releaseNotes>
+    <copyright>Gonçalo Faria 2022</copyright>
+    <tags>binance api crypto exchange bitcoin</tags>
+  </metadata>
+</package>

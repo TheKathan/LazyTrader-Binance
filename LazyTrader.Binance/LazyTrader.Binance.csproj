@@ -4,7 +4,32 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/TheKathan/LazyTrader-Binance</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/TheKathan/LazyTrader-Binance</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>binance;api;crypto;exchange;bitcoin</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <Title>LazyTrader.Binance</Title>
+        <Authors>Gonçalo Faria</Authors>
+		<Owners>Gonçalo Faria</Owners>
+        <Description>Binance API integration for .NET Core 6</Description>
+		<releaseNotes>Project is available</releaseNotes>
+        <Copyright>Gonçalo Faria 2022</Copyright>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />

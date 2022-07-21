@@ -9,7 +9,6 @@ public class Market
     {
         _logger = logger;
         _marketService = marketService;
-        var temp = new MarketService(null, null, null);
     }
     
     public async Task<ExchangeInfo> GetExchangeInfo(string? symbol, List<string>? symbolsList)
