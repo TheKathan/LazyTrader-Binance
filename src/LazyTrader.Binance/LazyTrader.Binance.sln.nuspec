@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+<package>
   <metadata>
     <id>LazyTrader.Binance</id>
-    <version>1.0.4</version>
+    <version>$(PackageVersion)</version>
     <authors>Gonçalo Faria</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">LGPL-3.0-only</license>
@@ -28,8 +28,8 @@
   </metadata>
 
   <files>
-    <file src="..\README.md" target="docs\" />
-    <file src="..\LICENSE" target="docs\" />
+    <file src="..\..\README.md" target="docs\" />
+    <file src="..\..\LICENSE" target="docs\" />
   </files>
   
 </package>
