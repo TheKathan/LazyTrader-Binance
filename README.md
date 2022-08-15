@@ -6,7 +6,17 @@
 
 ## About The Project
 
-This is my solution to integrate Binance API using .NET Core 6.
+Binance API wrapper for .NET Core 6.
+
+## Release Notes
+
+### 1.1.0
+- Added support for the **Binance Wallet** endpoints.
+
+### 1.0.0
+- Initial release
+- Added support for the **Binance Spot Trade** endpoints.
+- Added support for the **Binance Market Data** endpoints.
 
 ## Getting Started
 
@@ -25,10 +35,6 @@ Add the following to your appsettings.config:
     "Key": "binance-api-key",
     "Secret": "binance-api-secret",
     "RecvWindow": 10000
-  },
-"LazyTrader" : {
-    "ThrottleSleepTime": 10000,
-    "TradableAssets" : "BTC;ETH;TRX"
   }
 ```
 
@@ -48,28 +54,10 @@ public SpotController(Spot spot)
     _spot = spot;
 }
 
-[AllowAnonymous, HttpGet("account")]
+[HttpGet("account")]
 public async Task<IActionResult> Account()
 {
     var result = await _spot.GetAccount();
-    return Ok(result);
-}
-```
-
-of for Market:
-
-```
-private readonly Market _market;
-
-public MarketController(Market market)
-{
-    _market = market;
-}
-
-[AllowAnonymous, HttpGet("exchangeInfo")]
-public async Task<IActionResult> ExchangeInfo(string? symbol, List<string>? symbolsList)
-{
-    var result = await _market.GetExchangeInfo(symbol, symbolsList);
     return Ok(result);
 }
 ```
@@ -115,4 +103,3 @@ Project Link: [https://github.com/TheKathan/LazyTrader-Binance](https://github.c
 [license-url]: https://github.com/TheKathan/LazyTrader-Binance/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/gfaria
-[product-screenshot]: images/screenshot.png
