@@ -18,7 +18,7 @@
         <Description>Binance API wrapper using .NET Core</Description>
         <releaseNotes>Project is available</releaseNotes>
         <Copyright>Gonçalo Faria 2022</Copyright>
-        <PackageVersion>1.1.0</PackageVersion>
+        <PackageVersion>$(PackageVersion)</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
