@@ -9,7 +9,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageProjectUrl>https://github.com/TheKathan/LazyTrader-Binance</PackageProjectUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>binance;api;crypto;exchange;bitcoin</PackageTags>
+        <PackageTags>binance;api;crypto;exchange;bitcoin;wrapper</PackageTags>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
         <Title>LazyTrader.Binance</Title>
