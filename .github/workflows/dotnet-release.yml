@@ -20,7 +20,7 @@ jobs:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Build solution and generate NuGet package
-      run: dotnet pack .\src\LazyTrader.Binance\LazyTrader.Binance.csproj -c Release -o . -p:PackageVersion=${{ github.event.release.tag_name }}
+      run: dotnet pack ./src/LazyTrader.Binance/LazyTrader.Binance.csproj -c Release -o . -p:PackageVersion=${{ github.event.release.tag_name }}
       
     - name: PushNuget
       run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}} --skip-duplicate
