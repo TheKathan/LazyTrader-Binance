@@ -15,7 +15,9 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json 
+        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json      
+      env:
+          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Build solution and generate NuGet package
       run: dotnet pack .\src\LazyTrader.Binance\LazyTrader.Binance.csproj -c Release -o . -p:PackageVersion=${{ github.event.release.tag_name }}
@@ -24,6 +26,4 @@ jobs:
       run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}} --skip-duplicate
 
     - name: Push generated package to GitHub registry
-      run: dotnet nuget push *.nupkg --skip-duplicate --no-symbols true        
-      env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+      run: dotnet nuget push *.nupkg --skip-duplicate --no-symbols true   
