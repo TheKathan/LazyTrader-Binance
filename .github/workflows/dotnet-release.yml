@@ -1,4 +1,4 @@
-name: .NET
+name: Nuget and Github Release
 
 on:
   release:
@@ -26,7 +26,7 @@ jobs:
       run: dotnet pack ./src/LazyTrader.Binance/LazyTrader.Binance.csproj -c Release -o . -p:PackageVersion=${{ github.event.release.tag_name }}
       
     - name: Push generated package to Nuget registry
-      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}} --skip-duplicate
+      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
 
     - name: Push generated package to GitHub registry
       run: dotnet nuget push *.nupkg --skip-duplicate --no-symbols true   
