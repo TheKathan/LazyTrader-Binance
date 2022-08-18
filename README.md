@@ -10,6 +10,9 @@ Binance API wrapper for .NET Core 6.
 
 ## Release Notes
 
+### 1.2.0
+- Added support for the **Binance NFT** endpoints.
+
 ### 1.1.0
 - Added support for the **Binance Wallet** endpoints.
 
