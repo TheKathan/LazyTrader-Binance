@@ -7,12 +7,14 @@ public static class BinanceServiceCollectionExtension
         services.AddScoped<Spot>(); 
         services.AddScoped<Market>();
         services.AddScoped<Wallet>();
+        services.AddScoped<Nft>();
         
         services.AddScoped<IRequestService, RequestService>();
+        services.AddScoped<IStatusService, StatusService>();
         services.AddScoped<ISpotService, SpotService>();
         services.AddScoped<IMarketService, MarketService>();
         services.AddScoped<IWalletService, WalletService>();
-        services.AddScoped<IStatusService, StatusService>();
+        services.AddScoped<INftService, NftService>();
         
         // Policy to wait in case of too many calls, 429 error
         var policy = HttpPolicyExtensions
